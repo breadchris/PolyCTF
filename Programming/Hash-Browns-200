@@ -1,0 +1,6 @@
+===Title===
+Hash Browns
+===Question===
+The flag is in the file with the MD5 hash of: ...
+===Solution===
+Go through all of the files until you find the same hash
