@@ -10,7 +10,7 @@ struct node {
 };
 
 int main() {
-    int endValue = 0;
+    int endValue = 1984717964;
 	char path[64];
     struct node paths[] = {
         {&paths[18], 0xdeadbeef, &paths[5]},
@@ -23,7 +23,7 @@ int main() {
         {&paths[7], 0xdeadfa11, &paths[18]},
         {&paths[10], 0xdefec8ed, &paths[2]},
         {&paths[11], 0xdeadfeed, &paths[9]},
-        {&paths[22], 0xfee1dead, &paths[8]},
+        {&paths[21], 0xfee1dead, &paths[8]},
         {&paths[20], 0xfaceb00b, &paths[14]},
         {&paths[19], 0xfacefeed, &paths[12]},
         {&paths[17], 0x000ff1ce, &paths[6]},
@@ -42,22 +42,21 @@ int main() {
     puts("Where do you want to go in the rabbit hole?: ");
 
 	fgets(path, BUFFERSIZE, stdin);
-    strcpy(path, "LRLLRRRLLRLRLRRRLLLRRLRLRLLLRLLLLRRRLRLL");
     
     struct node* step = &paths[0];
     int value = step->value;
 
     int i;
     for (i = 0; i < BUFFERSIZE; i++) {
-        printf("%c\n", path[i]);
         if (path[i] == 'L') {
             step = step->left;
         } else if (path[i] == 'R') {
             step = step->right;
-        } else if (path[i] == '\0') {
+        } else if (path[i] == '\0' || path[i] == '\n') {
             break;
         }
 
+        printf("You found a: %x!\n", step->value);
         value ^= step->value;
     }
 
