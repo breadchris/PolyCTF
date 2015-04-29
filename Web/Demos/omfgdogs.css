@@ -1,0 +1,120 @@
+/* Oh hai! */
+
+body { 
+    background-image: url("omfgdogs.gif");
+    margin: 0;
+    padding: 0;
+    font: 12px/32px courier, monospace;
+}
+
+a { color: rgba(255, 216, 0, 1); }
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    zoom: 1;
+    background-color: rgba(0,0,0,0.3);
+    color: #DDD;
+}
+
+#footer a {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    color: #DDD;
+ 
+}
+#footer:hover {
+    background-color: rgba(0,0,0,0.6);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);   /* IE6 & 7 */
+    color: #fff;
+}
+
+#footer:hover a {
+    color: #fff;
+}
+
+#footer-left {
+    width: 205px;
+    float: left;
+    padding-left: 20px;
+}
+
+#footer-right {
+    float: right;
+}
+
+#ads {
+    position: absolute; 
+    float: left;
+    margin-left: 150px;
+    margin-top: 0px;
+}
+
+.adText {font: 12px courier, monospace; }
+.adHeadline { font: 12px courier, monospace;}
+
+#footer-right form,
+#flattr {
+    float: right;
+    margin: 6px 11px 0;
+    margin: 7px 0 0\9; /* IE8 & lower */
+}
+
+#flattr {
+    float: right;
+}
+
+#btc {
+    float: right;
+    margin: 3px 7px 0;
+}
+
+#doge {
+    float: right;
+    margin: 3px 2px 0;
+}
+
+.toast-title {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;color:#FFF;
+}
+
+.toast-message {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;color:#FFF;
+}
+
+#footer-right form {
+    padding: 0;
+    margin: 4px 0px 0px 0px;
+    line-height: 12px;
+}
+
+.fb-like { 
+    float: right;
+    margin: 3px 3px 0;
+}
+
+#helptext { 
+    float: left;
+    margin: 0 10px 0;
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    body { background: url(omfgdogs@2X.gif); background-size: 384px 80px; }
+}
+
+.centre {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	margin-top: 5%;
+}

@@ -1,6 +1,6 @@
 ===Title==
 SQL 1njection
 ===Question==
-Something about SQL Injection
+Basic login
 ===Solution===
-exploit app
+1' or '1'='1
