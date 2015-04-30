@@ -89,44 +89,45 @@ A competition aimed to draw talented students into the lab as well as make every
     - [ ] Konami Code on Site
 
 * Reverse Engineering
-    * ARM
-    * .NET
-    * Esoteric Languages
-    * Calculate code coverage to get pass (Pin)
-    * Slow Pong (Speed Hack)
+    - [ ] ARM
+    - [ ] .NET
+    - [ ] Esoteric Languages
+    - [ ] Calculate code coverage to get pass (Pin)
+    - [ ] Slow Pong (Speed Hack)
     * RPI Bomb Parts
-        * Single Character Comparision in Pass
-        * Follow Graph Data Structure
-        * Seed Function with Random Output
-    * APK
-    * Image Mounting / Disk Forensics 
+        - [ ] Single Character Comparision in Pass
+        - [ ] Follow Graph Data Structure
+        - [ ] Seed Function with Random Output
+    - [ ] APK
+    - [ ] Image Mounting / Disk Forensics 
+    - [ ] Memory analysis
 
 * Scripting
     * Game solving
-        * Tic Tack Toe
-        * Maze Oracle
-        * Rock Paper Scissor
-    * Password Compare Timing Attack
-    * Bank Fractions of a Penny
-    * Recruit QR
-    * JSON Linked List of Links
-    * Determine next digits of PI
-    * Wikipedia Game
+        - [ ] Tic Tack Toe
+        - [ ] Maze Oracle
+        - [ ] Rock Paper Scissor
+    - [ ] Password Compare Timing Attack
+    - [ ] Bank Fractions of a Penny
+    - [ ] Recruit QR
+    - [ ] JSON Linked List of Links
+    - [ ] Determine next digits of PI
+    - [ ] Wikipedia Game
 
 * Recon
-    * Game Lab Stream Key
+    - [ ] Game Lab Stream Key
     * Get into places
-        * The Art
-        * ISIS Lab
-        * Othmer
-        * Clark
-        * Ontop of Rogers
-    * Give us an online account
-    * Solve 2048
-    * Given starting location and velocity graph determine destition
-    * Get letter paper
-    * Break WEP
-    * By Particular Objects from Lackman
+        - [ ] The Art
+        - [ ] ISIS Lab
+        - [ ] Othmer
+        - [ ] Clark
+        - [ ] Ontop of Rogers
+    - [ ] Give us an online account
+    - [ ] Solve 2048
+    - [ ] Given starting location and velocity graph determine destition
+    - [ ] Get letter paper
+    - [ ] Break WEP
+    - [ ] By Particular Objects from Lackman
 
 ## Tools
 * Ubuntu Download
