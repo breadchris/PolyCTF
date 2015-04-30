@@ -14,79 +14,79 @@ A competition aimed to draw talented students into the lab as well as make every
 
 ## Challenge Ideas
 * Introduction
-    * nc
+    - [ ] nc
     * linux
-        * cd, grep, find, strings, cat -> pipe, env vars
-        * cat <file> - | ./<prog> (keep stdin open)
-    * base64
-    * Ceasar
-    * Hashing
-    * Git
-    * Javascript Console / View Source
-    * Filter out non alpha-numeric characters
-    * Strings on a file
-    * Connect to IRC
+        - [ ] cd, grep, find, strings, cat -> pipe, env vars
+        - [ ] cat <file> - | ./<prog> (keep stdin open)
+    - [ ] base64
+    - [ ] Ceasar
+    - [ ] Hashing
+    - [ ] Git
+    - [ ] Javascript Console / View Source
+    - [ ] Filter out non alpha-numeric characters
+    - [ ] Strings on a file
+    - [ ] Connect to IRC
 
 * Binary Exploitation
-    * Integer Overflow
+    - [ ] Integer Overflow
     * Sandboxes
-        * Shellcode
-        * Python
+        - [ ] Shellcode
+        - [ ] Python
     * Buffer Overflow
-        * Change stack variable
+        - [ ] Change stack variable
     * ROP
-        * Change return address
-        * Go into shellcode
-        * Ret-to-libc
+        - [ ] Change return address
+        - [ ] Go into shellcode
+        - [ ] Ret-to-libc
     * Format String
-        * Change global variable
-        * Change got addr w/ leak
-        * Change got addr w/o leak
-    * Stack Canary (PicoCTF)
+        - [ ] Change global variable
+        - [ ] Change got addr w/ leak
+        - [ ] Change got addr w/o leak
+    - [ ] Stack Canary (PicoCTF)
     * Heap
-        * Heap Overflow
-        * Use after free
+        - [ ] Heap Overflow
+        - [ ] Use after free
 
 * Web Exploitation
-    * Page Source (look at page source)
+    - [ ] Page Source (look at page source)
     * SQL Injection
-        * Login with SQL injection
-        * Null Selection (leak out db info)
-        * Like Query (brute out password)
+        - [ ] Login with SQL injection
+        - [ ] Null Selection (leak out db info)
+        - [ ] Like Query (brute out password)
     * XSS
-        * Alert on page
-        * JS Bot (Make bot run js)
-    * Alchemy (exploit bug to win game)
+        - [ ] Alert on page
+        v JS Bot (Make bot run js)
+    - [ ] Alchemy (exploit bug to win game)
 
 * Forensics
-    * Modify GBA Rom
-    * Packet Capture Pokemon between two GBAs
-    * ZIP Bomb (small)
-    * Image Size in Metadata
-    * Carving
+    - [ ] Modify GBA Rom
+    - [ ] Packet Capture Pokemon between two GBAs
+    - [ ] ZIP Bomb (small)
+    - [ ] Image Size in Metadata
+    - [ ] Carving
     * PCAP
-        * Telnet
-        * ICMP Ping with Data
-        * Encrypted Traffic (Superfish Cert)
-    * Steg?
-    * Memory Dump Analysis
-    * Lots of images find different time stamps
+        - [ ] Telnet
+        - [ ] ICMP Ping with Data
+        - [ ] Encrypted Traffic (Superfish Cert)
+    - [ ] Steg?
+    - [ ] Memory Dump Analysis
+    - [ ] Lots of images find different time stamps
 
 * Crypto
     * RSA Formula
-        * All factors given
-        * Factors missing
-    * Hash Extension
+        - [ ] All factors given
+        - [ ] Factors missing
+    - [ ] Hash Extension
     * XOR Breaking
-        * Single Key
-        * Multiple Character Key
-    * Hash Collision
+        - [ ] Single Key
+        - [ ] Multiple Character Key
+    - [ ] Hash Collision
     * _Crypto Pals for ideas_
 
 * Misc.
-    * Guess movie from hack scene (computer ui)
-    * X-Y-Z
-    * Konami Code on Site
+    - [ ] Guess movie from hack scene (computer ui)
+    - [ ] X-Y-Z
+    - [ ] Konami Code on Site
 
 * Reverse Engineering
     * ARM
