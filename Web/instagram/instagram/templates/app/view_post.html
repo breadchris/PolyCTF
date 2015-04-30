@@ -1,0 +1,40 @@
+{% extends 'app/base.html' %}
+{% load staticfiles %}
+{% load app_tags %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static "css/view_post.css" %}" />
+{% endblock %}
+{% block content %}
+<h1 class="post-description">{{ post.description }}</h1>
+<div id="post-content" class="row">
+    <div class="small-8 columns">
+        <img src="{{ MEDIA_URL }}{{ object.picture }}" />
+    </div>
+    <div class="small-4 columns">
+        <div class="user-wrapper">
+            <div class="small-4 columns post-profile-picture">
+                <a href="/accounts/{{ post.user.username }}">
+                    <img src="{{ MEDIA_URL }}{{ post.user.profile_picture }}" />
+                </a>
+            </div>
+            <div class="small-8 columns">
+                <p class="post-username">{{ post.user.username }}</p>
+                <p class="post-date">{{ post.creation_date }}</p>
+            </div>
+        </div>
+        <div class="post-comments-wrapper">
+            {% for comment in object.comment_set|getrelatedobjects %}
+                <div class="row comment-wrapper">
+                    <div class="small-2 columns comment-profile-picture">
+                        <img src="{{ MEDIA_URL }}{{ comment.user.profile_picture }}" />
+                    </div>
+                    <div class="small-10 columns comment-content">
+                        <a href="/accounts/{{ comment.user.username }}">{{ comment.user.username }}</a>
+                        {{ comment.comment }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

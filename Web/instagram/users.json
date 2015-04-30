@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "name": "Christopher Thompson",
+            "username": "chrislegolife1",
+            "email": "temp@temp.com",
+            "bio": "I like taking pictures",
+            "profile_picture": "/home/christopher/Pictures/profile_picture.png"
+        },
+        {
+            "name": "John Doe",
+            "username": "johndoe",
+            "email": "temp1@temp1.com",
+            "bio": "I like taking pictures even more",
+            "profile_picture": "/home/christopher/Pictures/profile_picture_1.jpg"
+        }
+    ]
+}

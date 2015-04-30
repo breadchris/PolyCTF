@@ -1,0 +1,25 @@
+{
+    "posts": [
+        {
+            "description": "My cool picture",
+            "creation_date": "2014-09-06",
+            "user": "chrislegolife",
+            "picture": "/home/christopher/Documents/Coding/instagram-clone/instagram/instagram/media/post_pictures/ComputerScienceCloud.png",
+            "likes": [
+                "Anal1994",
+                "Bropper",
+                "Faidever"
+            ],
+            "comments": [
+                {
+                    "user": "Anal1994",
+                    "comment": "Nice picture"
+                },
+                {
+                    "user": "Bropper",
+                    "comment": "Yeah it is really cool"
+                }
+            ]
+        }
+    ]
+}

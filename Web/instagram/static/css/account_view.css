@@ -1,0 +1,61 @@
+.feed-header {
+    padding: 0px;
+    margin: 0px;
+    background-color: #333;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    background-image: url('img/header-gradient.png'), url('img/noise-black.png');
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2),
+                0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.compWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 720px;
+    border-width: medium 1px 1px;
+    border-style: none solid solid;
+    border-color: -moz-use-text-color #000 #000
+                  -moz-border-top-colors: none
+                  -moz-border-right-colors: none
+                  -moz-border-bottom-colors: none
+                  -moz-border-left-colors: none;
+    border-image: none;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.compNoComp .compInnerWrapper {
+    padding-bottom: 88px;
+    position: relative;
+    width: auto;
+}
+
+.compWrapper .compContainer {
+    border-radius: 0px;
+    background-color: #444;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin-left: 0px;
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
+}
+
+.feed-photos {
+    max-width: 1024px;
+    margin: 0px auto;
+    background: none repeat scroll 0% 0% #EAEAEA;
+    border-radius: 0px 0px 4px 4px;
+    display: block;
+}
+

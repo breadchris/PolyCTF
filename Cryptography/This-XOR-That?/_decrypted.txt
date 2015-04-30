@@ -1,0 +1,1 @@
+Nice job! flag{xor_encryption_isnt_too_bad}

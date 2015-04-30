@@ -1,0 +1,26 @@
+{% extends 'app/base.html' %}
+{% load staticfiles %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static "css/account_view.css" %}" />
+{% endblock %}
+{% block content %}
+
+<center><h1>View Account</h1></center>
+<br />
+<div class="profile-user">
+    <div class="row">
+        <div class="small-6 columns">
+            <img src="{{ MEDIA_URL }}{{ object.profile_picture }}" />
+        </div>
+        <div class="small-3 columns" style="float:left">
+            <p>Name: {{ object.name }}</p>
+            <p>Username: {{ object.username }}</p>
+            <p>Email: {{ object.email }}</p>
+            <p>Biography: {{ object.bio }}</p>
+        </div>
+    </div>
+</div>
+<section class="feed-photos">
+</section>
+
+{% endblock %}

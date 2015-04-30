@@ -1,0 +1,123 @@
+.post-profile-info {
+    margin: 20px 15px 0 0 !important;
+}
+
+.post-profile-info p {
+    text-align: right;
+    margin-bottom: 0px !important;
+}
+
+.post-profile-picture {
+    padding: 0px !important;
+}
+
+.post-wrapper {
+}
+
+.post-center {
+    -webkit-box-shadow: inset  1px 0 0 rgba(0, 0, 0, .05),
+                        inset -1px 0 0 rgba(0, 0, 0, .05);
+       -moz-box-shadow: inset  1px 0 0 rgba(0, 0, 0, .05),
+                        inset -1px 0 0 rgba(0, 0, 0, .05);
+            box-shadow: inset  1px 0 0 rgba(0, 0, 0, .05),
+                        inset -1px 0 0 rgba(0, 0, 0, .05);
+    background: #E0E1E2 url(img/post-noise.png);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-width: 0 1px;
+    min-width: 240px;
+    max-width: 512px;
+    padding: 16px 32px;
+    float: left !important;
+}
+
+.post-content-wrapper {
+    background: #fafafa;
+    border: 1px solid silver;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: 0 1px 16px rgba(0, 0, 0, .1);
+       -moz-box-shadow: 0 1px 16px rgba(0, 0, 0, .1);
+            box-shadow: 0 1px 16px rgba(0, 0, 0, .1);
+}
+
+.post-comment {
+    margin: 10px 10px 0px 10px;
+}
+
+.post-comment-input {
+    margin-bottom: 10px !important;
+}
+
+.post-username {
+    font-size: 15px;
+}
+
+.post-date {
+    font-size: 10px;
+    font-weight: bold;
+    color: #ACACAC;
+}
+
+.comment-wrapper {
+    margin: 5px !important;
+}
+
+.comment-wrapper img {
+    float: left;
+    max-height: 25px;
+}
+
+.comment-profile-picture {
+    padding: 0px !important;
+    width: 10% !important;
+}
+
+.comment-content {
+    float: left !important;
+}
+
+.post-likes-wrapper {
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid #DDD;
+    margin: 1px 0px -1px;
+    background: url('img/white-noise.png') repeat-x scroll 50% 50% #E6E6E6;
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.15) inset, 0px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post-like-button {
+    position: relative;
+    float: left;
+    display: inline;
+    height: 100%;
+    width: 48px;
+    -moz-user-select: none;
+    background: url('img/post-assets.png') no-repeat scroll 8px 6px transparent;
+    border-right: 1px solid #DDD;
+    box-shadow: 1px 0px 0px rgba(255, 255, 255, 0.9);
+}
+
+.post-more-button {
+    border-left: 1px solid #DDD;
+    box-shadow: 1px 0px 0px rgba(255, 255, 255, 0.9) inset;
+    background: url('img/post-assets.png') no-repeat scroll 7px -94px transparent;
+    display: block;
+    cursor: pointer;
+    height: 100%;
+    width: 48px;
+}
+
+.post-like-list {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.dropdown {
+    margin-bottom: 0px;
+}
+
+.filter-posts {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
