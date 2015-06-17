@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ISISgram</title>
+        <link rel="stylesheet" href="{% static "css/foundation.css" %}" />
+        <link rel="stylesheet" href="{% static "css/base.css" %}" />
+        {% block stylesheets %}{% endblock %}
+        <script src="{% static "js/vendor/modernizr.js" %}"></script>
+    </head>
+    <body>
+        <div class="root">
+            <header class="top-bar">
+                <div class="top-bar-wrapper">
+                    <div class="top-bar-left">
+                        <ul class="top-bar-actions">
+                            <li>
+                                <a class="top-bar-home" href="/" label="Home">
+                                    <i></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="logo"></h1>
+                    <div class="top-bar-right">
+                        <div class="base-links">
+                            <a href="/search/">Find Account</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="main">
+                <div class="wrapper">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+            <footer class="page-footer">
+            </footer>
+        </div>
+    </body>
+    <script src="{% static "js/vendor/jquery.js" %}"></script>
+    <script src="{% static "js/foundation.min.js" %}"></script>
+    <script> $(document).foundation(); </script>
+    {% block scripts %}{% endblock %}
+</html>

@@ -1,0 +1,40 @@
+{% extends 'app/base.html' %}
+{% load staticfiles %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static "css/account_search.css" %}" />
+<link rel="stylesheet" href="{% static "css/image_fx.css" %}" />
+{% endblock %}
+{% block content %}
+<center><h1>Account Search</h1></center>
+<div class="row">
+    <div class="small-12 columns">
+        <form action="/search/" method="POST">
+            {% csrf_token %}
+            <label>Search for Accounts
+                <input type="text" placeholder="" value="{{ query }}" id="query" name="query" />
+            </label>
+        </form>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="grid">
+        {% for user in object_list %}
+            <a href="/accounts/{{ user.username }}">
+            <figure class="effect-sadie">
+                    <img src="{{ MEDIA_URL }}{{ user.profile_picture }}" />
+                <figcaption>
+                    <h2>@{{ user.username }}
+                        <br />
+                        <span>
+                            {{ user.name }}
+                        </span>
+                    </h2>
+                    <p>{{ user.email }}</p>
+                </figcaption>
+            </figure>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
