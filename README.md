@@ -71,6 +71,7 @@ A competition aimed to draw talented students into the lab as well as make every
     - [ ] Steg?
     - [ ] Memory Dump Analysis
     - [ ] Lots of images find different time stamps
+    - [ ] Shuffle JPEG blocks, keep CRC hashes in right place
 
 * Crypto
     * RSA Formula
