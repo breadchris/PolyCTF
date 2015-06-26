@@ -130,6 +130,7 @@ A competition aimed to draw talented students into the lab as well as make every
     - [ ] Get letter paper
     - [ ] Break WEP
     - [ ] By Particular Objects from Lackman
+    - [ ] Determine someone's favorite resturant
 
 ## Tools
 * Ubuntu Download
