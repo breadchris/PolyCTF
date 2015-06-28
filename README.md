@@ -73,7 +73,7 @@ A competition aimed to draw talented students into the lab as well as make every
     - [ ] Memory Dump Analysis
     - [ ] Lots of images find different time stamps
     - [ ] Shuffle JPEG blocks, keep CRC hashes in right place
-    - [ ] Image Mounting / Disk Forensics 
+    - [X] Image Mounting / Disk Forensics 
     - [ ] Memory analysis
 
 * Crypto
