@@ -49,6 +49,7 @@ A competition aimed to draw talented students into the lab as well as make every
 
 * Web Exploitation
     - [ ] Page Source (look at page source)
+    - [x] Heartbleed thing
     * SQL Injection
         - [ ] Login with SQL injection
         - [ ] Null Selection (leak out db info)
@@ -101,7 +102,7 @@ A competition aimed to draw talented students into the lab as well as make every
     * RPI Bomb Parts
         - [x] Single Character Comparision in Pass
         - [x] Follow Graph Data Structure
-        - [ ] Seed Function with Random Output
+        - [x] Seed Function with Random Output
     - [ ] APK
 
 * Scripting
