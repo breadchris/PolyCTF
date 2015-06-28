@@ -158,7 +158,6 @@ if __name__ == "__main__":
                 o = Oracle()
                 self.request.send("You have been blind folded and are told to solve a maze that you have been placed in. You can move with h, j, k and l.")
                 while True:
-                    o.print_maze()
                     self.request.send("\nmove: ")
                     move = self.request.recv(2)[0]
                     o.move = move
