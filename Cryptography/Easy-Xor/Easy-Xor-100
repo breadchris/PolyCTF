@@ -1,0 +1,7 @@
+===Title===
+Simple X~~ZOR
+===Question==
+Thought I was cool enough to use Xor for my password encryption. Unfortunately, I forgot my password.Decrpyt it and get the password for me!
+===Solution===
+Solving Xor will give you the flag.
+flag{XOR_XOR_XOR}
