@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 flag = 'flag{N0t_to0_h4rd_r1t3?}'
 
-chain = range(100000)
+chain = range(10000)
 shuffle(chain)
 goal_id = choice(chain)
 links = {a:b for a,b in zip(chain[:-1], chain[1:])}
