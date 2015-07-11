@@ -1,0 +1,155 @@
+Definitions
+-----------
+constant - A single value that directly represents some data (ie 16, 0x42, etc)
+NOTE: constants can be represented as either decimal or hexidecimal numbers
+
+register - Essentialy a variable in that it is a reference to some varying value
+
+instruction - A operation that is performed on its given operands
+
+Registers
+---------
+All registers hold reference to signed integers
+
+ERIP - Instruction pointer
+ERAX - General purpose
+ERBX - General purpose
+ERCX - Loop Counter
+ERDX - General purpose
+NYAN - General purpose
+GERD - Reserved for jesus
+
+Instructions
+------------
+
+Arithmetic
+**********
+All arithmetic operations that take two operands stores the result of the operation
+in the rightmost location (thus the right operand cannot be a constant). Thus, these
+operations can only take on the following constant and register combinations:
+
+<oper>  <reg>, <reg>
+<oper>  <con>, <reg>
+
+An example operation that takes two operands is:
+
+ERDD    16, ERAX   # Adds 16 to the value in ERAX and stores the result in ERAX
+
+All arithmetic operations that take one operand applys the operation to the operand
+and stores the result in the operand. Therefore, you cannot have a constant supplied
+as the operand to a unary arithmetic operation. 
+
+Example:
+
+DERC    ERBX   # Subtracts one from the value in ERBX
+
+=========================================================================================
+ERDD - Sums the two given values together and stores the result in the second operand
+Ex.
+
+ERDD    0xdead, ERCX   # Adds 0xdead to ERCX and stores result in ERCX
+
+=========================================================================================
+SERB - Subtracts the first operand from the second operand and stores the result in the
+second operand
+Ex.
+
+SERB    0xbeef, ERDX   # Subtracts 0xbeef from ERDX and stores result in ERDX
+
+=========================================================================================
+MERT - Multiplies the two given values with each other and stores the result in the second
+operand
+Ex.
+
+MERT    0x1337, NYAN   # Multiplies 0x1337 and NYAN and stores the product in NYAN
+
+=========================================================================================
+DERV - Divides the first operand from the second operand and stores the result in the 
+second operand
+Ex.
+
+DERV    111, ERAX  # Divides 111 and ERAX and stores quotient in ERAX
+
+=========================================================================================
+MERD - Takes the mod of the first operand and second operand and stores the result in
+the second operand
+Ex.
+
+MERD    1024, ERBX  # Calculates 1024 mod ERBX and stores result in ERBX
+
+=========================================================================================
+ERNC - Increments the value in given operand
+Ex.
+
+ERNC    ERCX    # Adds 1 to ERCX and stores value in ERCX
+
+=========================================================================================
+DERC - Decrements the value in given operand
+Ex.
+
+DERC    ERDX    # Subtracts 1 from ERDX and stores value in ERDX
+
+=========================================================================================
+ERND - Ands the values in first operand and second operand then stores result in 
+the second operand
+Ex.
+
+ERND    ERDX, ERAX  # Ands ERDX and ERAX and stores result in ERAX
+
+=========================================================================================
+ER - Ors the values in first operand and second operand then stores result in
+the second operand
+Ex.
+
+ER      0xf, ERAX   # Ors 0xf and ERAX and stores result in ERAX
+
+=========================================================================================
+XER - Xors the values in first operand and second operand then stores result in
+the second operand
+Ex.
+
+ER      0xff, ERBX   # Xors 0xff and ERBX and stores result in ERBX
+
+=========================================================================================
+NERT - Nots the given operand and stores result in given operand
+Ex.
+
+NERT      ERCX   # Nots ERCX and stores result in ERCX
+
+=========================================================================================
+
+Data Movement
+*************
+The same rules which apply to the operands in the arithmetic instruction's operands
+apply to the data movement instructions. That is, the destination of the operand's 
+value is the rightmost operand and thus this operand cannot be a constant
+
+MERV
+PERP
+PERSH
+PERP
+
+Control Flow
+************
+All control flow instructions have a conditional check and relative instruction
+offset to add to ERIP for example:
+
+JERP 10
+
+will add 10 to ERIP and thus will jump 10 instructions down while:
+
+JERP -5
+
+will add -5 to ERIP and will jump 5 instructions upward.
+
+JERP
+JERPNERT
+JERPLERS
+JERPLERSEREQER
+JERPGERS
+JERPGERSEREQER
+
+Misc
+****
+ERLYERREGSERBERLERTERERS - All registers are set to the value 0x1337beef
+
