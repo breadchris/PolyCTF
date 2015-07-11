@@ -1,8 +1,8 @@
 import SocketServer, sys, random, struct
 from threading import Thread
 
-MAZE_WIDTH  = 20
-MAZE_HEIGHT = 20
+MAZE_WIDTH  = 5
+MAZE_HEIGHT = 5
 
 BOTTOMWALL = 0
 RIGHTWALL  = 1
@@ -138,8 +138,8 @@ class Oracle:
         elif move == "l":
             self.position[1] += 1
 
-        if self.position[0] == MAZE_WIDTH and \
-            self.position[1] == MAZE_HEIGHT:
+        if self.position[0] == MAZE_WIDTH - 1 and \
+            self.position[1] == MAZE_HEIGHT - 1:
             return True
         else:
             return False
@@ -167,6 +167,7 @@ if __name__ == "__main__":
                         if confirm == "y":
                             if o.commit():
                                 self.request.send("You solved the maze! " + FLAG)
+                            o.print_maze()
                     else:
                         self.request.send("[-] You cannot move in that direction")
             except:
