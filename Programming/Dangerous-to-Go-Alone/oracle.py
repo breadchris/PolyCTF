@@ -148,7 +148,7 @@ class Oracle:
         print self.maze.print_maze(self.position)
 
 if __name__ == "__main__":
-    HOST = 'localhost'
+    HOST = '0.0.0.0'
     PORT = 9010
     FLAG = 'flag{YOU_ARe_SO_A-MAZE-ING_:D}'
 
