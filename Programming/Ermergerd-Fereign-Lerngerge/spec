@@ -108,7 +108,7 @@ XER - Xors the values in first operand and second operand then stores result in
 the second operand
 Ex.
 
-ER      0xff, ERBX   # Xors 0xff and ERBX and stores result in ERBX
+XER      0xff, ERBX   # Xors 0xff and ERBX and stores result in ERBX
 
 =========================================================================================
 NERT - Nots the given operand and stores result in given operand
