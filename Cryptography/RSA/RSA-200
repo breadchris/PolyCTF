@@ -1,0 +1,9 @@
+#Round 1.
+#Get the flag.
+
+m = 0x22bb1d924b0b7600d35cdfef305b395f83ba50d54fd8dc7d9L 
+e = 17
+n = 0x179129a48e44a6faacef8b8e8a2e888dca3c65d130836bfadbL
+d = ? 
+
+
