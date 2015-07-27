@@ -1,0 +1,10 @@
+#Hm...bigger number??? No problem.
+#Once again google is your best friend.
+
+p = 0x187f7320d579a3313L
+q = 0x3df51a843c650b81dL
+e = 17
+n = 0x5edd2f19a7a864657ddc9bc23691d7127L
+d = 0x10bd9ee668e17b20e8d6209bbb2eacc59L
+m = 1066240206369523866680080261921934829976
+
