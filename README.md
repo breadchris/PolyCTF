@@ -14,30 +14,30 @@ A competition aimed to draw talented students into the lab as well as make every
 
 ## Challenge Ideas
 * Introduction
-    - [ ] nc
+    - [x] nc
     * linux
         - [ ] cd, grep, find, strings, cat -> pipe, env vars
         - [ ] cat <file> - | ./<prog> (keep stdin open)
-    - [ ] base64
-    - [ ] Ceasar
-    - [ ] Hashing
+    - [x] base64
+    - [x] Ceasar
+    - [x] Hashing
     - [ ] Git
     - [ ] Javascript Console / View Source
-    - [ ] Filter out non alpha-numeric characters
-    - [ ] Strings on a file
+    - [x] Filter out non alpha-numeric characters
+    - [x] Strings on a file
     - [ ] Connect to IRC
 
 * Binary Exploitation
-    - [ ] Integer Overflow
+    - [x] Integer Overflow
     * Sandboxes
         - [ ] Shellcode
         - [ ] Python
     * Buffer Overflow
-        - [ ] Change stack variable
+        - [x] Change stack variable
     * ROP
-        - [ ] Change return address
-        - [ ] Go into shellcode
-        - [ ] Ret-to-libc
+        - [x] Change return address
+        - [x] Go into shellcode
+        - [x] Ret-to-libc
     * Format String
         - [ ] Change global variable
         - [ ] Change got addr w/ leak
@@ -49,6 +49,7 @@ A competition aimed to draw talented students into the lab as well as make every
 
 * Web Exploitation
     - [ ] Page Source (look at page source)
+    - [x] Heartbleed thing
     * SQL Injection
         - [ ] Login with SQL injection
         - [ ] Null Selection (leak out db info)
@@ -66,20 +67,24 @@ A competition aimed to draw talented students into the lab as well as make every
     - [ ] Carving
     * PCAP
         - [ ] Telnet
-        - [ ] ICMP Ping with Data
+        - [x] ICMP Ping with Data
         - [ ] Encrypted Traffic (Superfish Cert)
     - [ ] Steg?
     - [ ] Memory Dump Analysis
     - [ ] Lots of images find different time stamps
+    - [ ] Shuffle JPEG blocks, keep CRC hashes in right place
+    - [X] Image Mounting / Disk Forensics 
+    - [ ] Memory analysis
 
 * Crypto
+    * [x] Math formula thing
     * RSA Formula
-        - [ ] All factors given
+        - [x] All factors given
         - [ ] Factors missing
     - [ ] Hash Extension
     * XOR Breaking
-        - [ ] Single Key
-        - [ ] Multiple Character Key
+        - [x] Single Key
+        - [x] Multiple Character Key
     - [ ] Hash Collision
     * _Crypto Pals for ideas_
 
@@ -95,12 +100,10 @@ A competition aimed to draw talented students into the lab as well as make every
     - [ ] Calculate code coverage to get pass (Pin)
     - [ ] Slow Pong (Speed Hack)
     * RPI Bomb Parts
-        - [ ] Single Character Comparision in Pass
-        - [ ] Follow Graph Data Structure
-        - [ ] Seed Function with Random Output
+        - [x] Single Character Comparision in Pass
+        - [x] Follow Graph Data Structure
+        - [x] Seed Function with Random Output
     - [ ] APK
-    - [ ] Image Mounting / Disk Forensics 
-    - [ ] Memory analysis
 
 * Scripting
     * Game solving
@@ -128,6 +131,7 @@ A competition aimed to draw talented students into the lab as well as make every
     - [ ] Get letter paper
     - [ ] Break WEP
     - [ ] By Particular Objects from Lackman
+    - [ ] Determine someone's favorite resturant
 
 ## Tools
 * Ubuntu Download

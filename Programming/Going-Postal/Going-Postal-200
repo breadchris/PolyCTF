@@ -1,0 +1,13 @@
+===Title===
+Going Postal
+===Question===
+Given a list like 3 4 2 7 5 8 3
+
+Give us a list like 2 3 5 8 7 4 3
+
+
+You might find the following articles helpful:
+    http://en.wikipedia.org/wiki/Binary_search_tree
+    http://en.wikipedia.org/wiki/Tree_traversal#Post-order_2
+===Solution===
+Assemble a Binary Search Tree from the elements, and print it in Post Order

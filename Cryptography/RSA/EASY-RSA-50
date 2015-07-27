@@ -1,0 +1,14 @@
+#Flag is a number. 
+#Google is your best friend.
+
+p = 23
+q = 41
+N = 943
+Totient = 880
+e = 7
+d = 503
+encrypted message = 545
+encrypted message = message^e mod n
+message = encrypted message^d mod n
+
+

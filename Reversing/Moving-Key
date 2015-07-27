@@ -1,0 +1,1 @@
+Binary that has a driver decryption method that executes bytes from data section by xoring them with whatever value of eax is
