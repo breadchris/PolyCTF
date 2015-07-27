@@ -92,6 +92,7 @@ A competition aimed to draw talented students into the lab as well as make every
     - [ ] Guess movie from hack scene (computer ui)
     - [ ] X-Y-Z
     - [ ] Konami Code on Site
+    - [ ] Ed, the standard editor
 
 * Reverse Engineering
     - [ ] ARM
