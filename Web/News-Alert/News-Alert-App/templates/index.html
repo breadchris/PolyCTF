@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style>
+textarea {
+    color: #FFF;
+}
+</style>
+<script src="/static/js/geo.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <center><h1>Er-mah-GERD!</h1></center>
+    <center><h5 style="font-size:120%">Everybody's favorite place to post their memes!</h5></center>
+    <hr />
+    <div class="post">
+        <h3>Lulz catz furrr lyfe</h3>
+        <center>
+            <img id="luz-cat-picture" src="https://i.chzbgr.com/maxW500/7929877248/hCCCC331E/" alt="LULZ CATZ" class="img-rounded img-responsive">
+        </center>
+    </div>
+    <div class="vote">
+        <br />
+        <p style="font-size:20px">Do you likz le meme?&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-thumbs-up"></i>
+        <i class="fa fa-thumbs-down"></i>
+        </p>
+    </div>
+    <hr />
+    {% if comment %}
+        <h4>HEY! YOU COMMENTED! This is wat you said:</h4>
+        <h5>{% autoescape false %}{{ comment }}{% endautoescape %}</h5>
+    {% endif %}
+
+    <br />
+    <br />
+    <div class="comment">
+        <p>Leave a comment yo!</p>
+        <form id="comment-form" action="/" method="POST">
+            <textarea name="comment" rows="5" cols="40" form="comment-form"></textarea>
+            <input type="submit" class="btn btn-block btn-lg btn-primary" value="Oh hai! Your'e done? Klick Me!">
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
