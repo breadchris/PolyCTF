@@ -10,7 +10,7 @@ The md5 hash of the key is `9b9ce520ab2653c129c346bc44dac9cb`. The format of eac
  - a number from 0-9 inclusive
  - a lowercase letter from o-t inclusive
  - a number from 0-9 inclusive
- -"u"
+ - "u"
  - a number from 0-9 inclusive
 
 ## Answer
