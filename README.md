@@ -92,6 +92,7 @@ A competition aimed to draw talented students into the lab as well as make every
     - [ ] Guess movie from hack scene (computer ui)
     - [ ] X-Y-Z
     - [ ] Konami Code on Site
+    - [ ] Ed, the standard editor
 
 * Reverse Engineering
     - [ ] ARM
@@ -104,6 +105,14 @@ A competition aimed to draw talented students into the lab as well as make every
         - [x] Follow Graph Data Structure
         - [x] Seed Function with Random Output
     - [ ] APK
+
+* Web Exploitation
+    - [ ] Alert something on the page
+    - [ ] Javascript bot on server side evaluating what is sent
+    - [ ] Execute javascript in console
+    - [ ] Robots.txt
+    - [ ] Race condition
+    - [ ] Headers
 
 * Scripting
     * Game solving

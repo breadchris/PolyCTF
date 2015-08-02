@@ -1,0 +1,10 @@
+ * Running on http://0.0.0.0:4000/ (Press CTRL+C to quit)
+ * Restarting with stat
+127.0.0.1 - - [26/Jul/2015 21:47:29] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [26/Jul/2015 21:47:29] "GET /static/img/microfab.gif HTTP/1.1" 404 -
+127.0.0.1 - - [26/Jul/2015 21:47:29] "GET /static/img/stars.gif HTTP/1.1" 404 -
+127.0.0.1 - - [26/Jul/2015 21:48:49] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [26/Jul/2015 21:48:49] "GET /static/img/microfab.gif HTTP/1.1" 200 -
+127.0.0.1 - - [26/Jul/2015 21:48:49] "GET /static/img/stars.gif HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:4000/ (Press CTRL+C to quit)
+ * Restarting with stat
