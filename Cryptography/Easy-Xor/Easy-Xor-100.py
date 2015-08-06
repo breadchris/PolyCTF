@@ -1,7 +1,6 @@
 
 FLAG = NOTHING IS FREE.SOLVE IT!
 
-
 def xor():
 	a = []
 	[a.append(ord(x) ^ 0xdeadbeef) for x in FLAG]
@@ -16,10 +15,7 @@ def xor():
 def checker(b):
 	return b == "XXXXXXXX"
 
-
-
 def main():
 	xor()
-
 
 main()
