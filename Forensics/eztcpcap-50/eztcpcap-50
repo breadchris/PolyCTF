@@ -3,5 +3,5 @@ eztcpcap
 ===Question==
 Nextgenhacker101 has been up to more shennanigans. Shorty after exploiting a tracer-t vulnerability on the pentagon, NGH101 was spotted entering a coffee shop with a laptop. Since the traffic in the coffe shop was unencrypted, we managed to get a pcap of his session. Help us find out what hes been up to.
 ===Solution===
-The flag is in a png in a tcp stream going to 192.168.1.21.
+The flag is in a png in a password protected 7zip file in a tcp stream going to 192.168.1.21. the password for the file. the password is appended to the zip file.
 flag{THIS_IS_WHY_YOU_USE_SSH}
