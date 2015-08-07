@@ -14,6 +14,7 @@ def create_app(username="", password=""):
         from vuln.views import init_views
         from vuln.errors import init_errors
         from vuln.utils import init_utils
+
         init_views(app)
         init_errors(app)
         init_utils(app)

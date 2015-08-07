@@ -10,7 +10,7 @@ $(document).ready(function() {
         }
         colorfy.text("");
         $.map(chars, function(c, i) {
-            var font = $("<blink><font>"+c+"</font></blink>");
+            var font = $("<font>"+c+"</font>");
             font.css({"color": colors[i % colors.length]});
             colorfy.append(font);
         });
