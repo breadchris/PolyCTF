@@ -1,0 +1,9 @@
+===Title===
+Counting Semaphores
+===Question==
+Let's spell the flag out in flags.
+
+===Solution===
+Simple substitution - https://en.wikipedia.org/wiki/Flag_semaphore
+ASCII art generated using http://www.ioccc.org/2000/anderson.c (Winner of the obfuscated C contest 2000.)
+flag{flags_on_flags_on_flags}
