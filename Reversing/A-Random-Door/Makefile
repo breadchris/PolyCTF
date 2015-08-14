@@ -1,2 +1,2 @@
 door: door.c
-	gcc -o door door.c -O0
+	gcc -o door door.c -O0 -m32
