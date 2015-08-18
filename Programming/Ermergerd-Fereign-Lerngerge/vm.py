@@ -141,6 +141,7 @@ class VM(object):
             else:
                 val = decode_literal(arg1)
             self.registers.values[Registers.ERIP] = val
+            did_jump = True
         elif inst == 'NERT':
             self.registers.values[to_register(arg1)] = ~self.registers.values[to_register(arg1)] 
         elif inst == 'PERP':
