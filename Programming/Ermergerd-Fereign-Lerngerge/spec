@@ -130,25 +130,24 @@ PERSH
 PERP
 SWERP
 
+Comparisons
+***********
+
+The following instructions work similarly to the other binary functions (arg1, arg2/dest).
+
+LERS: Puts the value 1 into arg2 if arg1 < arg2, 0 otherwise
+EQER: Puts the value 1 into arg2 if arg1 = arg2, 0 otherwise
+GRTR: Puts the value 1 into arg2 if arg1 > arg2, 0 otherwise
+LERSOREQER: Puts the value 1 into arg2 if arg1 >= arg2, 0 otherwise
+GRTROREQER: Puts the value 1 into arg2 if arg1 <= arg2, 0 otherwise
+
 Control Flow
 ************
-All control flow instructions have a conditional check and relative instruction
-offset to add to ERIP for example:
 
-JERP 10
+Control flow instructions take a jump destination, and if they are conditional, a condition.
 
-will add 10 to ERIP and thus will jump 10 instructions down while:
-
-JERP -5
-
-will add -5 to ERIP and will jump 5 instructions upward.
-
-JERP
-JERPNERT
-JERPLERS
-JERPLERSEREQER
-JERPGERS
-JERPGERSEREQER
+JERP: Unconditional jump. Go to the line specified by the first argument. No second argument.
+CERNJERP: Conditional jump. Go to the line specified by the first argument if the second argument has a value of 1, otherwise increment ERIP as normal.
 
 Misc
 ****
