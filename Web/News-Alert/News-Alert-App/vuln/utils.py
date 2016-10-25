@@ -8,8 +8,7 @@ def init_utils(app):
     app.jinja_env.globals.update(challenge_name=challenge_name)
 
 def challenge_name():
-    name = get_config('challenge_name')
-    return name if name else 'vuln'
+    return 'vuln'
 
 def get_config(key):
     config = Config.query.filter_by(key=key).first()

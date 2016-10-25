@@ -70,6 +70,39 @@ def init_views(app):
 
     @app.route('/challenge2')
     def challenge2():
+        if AUTHENTICATE is True:
+            c2 = cherrypy.request.cookie.get('c2')
+            if not authorize(c2, CSAW_CRYPTO_2_KEY, CSAW_SIGNING_KEY, CSAW_CRYPTO_2_CHALLENGE_TOKEN):
+                return self.index()
+
+        if role is None:
+            c2 = cherrypy.request.cookie.get('c2')
+            if c2:
+                role = c2.value
+            else:
+                token = aes_encrypt("CSAW 2010 CRYPTO #02|%s|%s|BLAHCHALLENGEAAAAA|role=5" % ('guest', 'guest'), CSAW_CRYPTO_2_KEY)
+                cherrypy.response.cookie['c2'] = token
+                return WELCOME_CHALLENGE_2
+
+        # OK, we got this far..  they've passed the correct challenge token
+        # this is a bit flipping challenge, so flip 1 bit to get role=0
+        token = aes_decrypt(role, CSAW_CRYPTO_2_KEY)
+        username, teamname, = token.split('|')[1:3]
+
+        padding_length = struct.unpack("B", token[-1])[0]
+        roleid = token[:-padding_length].rsplit('|', 1)[-1]
+
+
+        if roleid[-1] == '0':
+            if AUTHENTICATE is True:
+                token = aes_encrypt_then_sign(CSAW_CRYPTO_3_CHALLENGE_TOKEN, CSAW_CRYPTO_3_KEY, CSAW_SIGNING_KEY)
+                cherrypy.response.cookie['c3'] = token
+            signature = e_b64(sign('guest', CSAW_SIGNING_KEY), '-', '_').rstrip('=').rstrip()
+
+            return SUCCESS_CHALLENGE_2 % (e_html(username), e_html(teamname), CSAW_CRYPTO_2_FLAG, "guest", signature)
+        else:
+            return RETURNING_CHALLENGE_2 % (e_html(username), e_html(teamname), e_html(roleid[-1]))
+
         return render_template('challenge2.html')
 
     @app.route('/challenge3')

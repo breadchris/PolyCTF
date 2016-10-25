@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, abort, session, jsonify, json as json_mod, url_for
-from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.session import Session
 import logging
 import os
@@ -9,12 +8,6 @@ def create_app(username="", password=""):
     app = Flask("vuln", static_folder="../static", template_folder="../templates")
     with app.app_context():
         app.config.from_object('vuln.config')
-
-        from vuln.models import db 
-        db.init_app(app)
-        db.create_all()
-
-        app.db = db
 
         Session(app)
 
